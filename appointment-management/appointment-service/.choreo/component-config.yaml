@@ -21,17 +21,17 @@ spec:
       # The path should be relative to the Docker context.
       schemaFilePath: openapi.yaml
   outbound:
-    serviceReferences:
+      serviceReferences:
       - name: database:devHrDb
-        connectionConfig: 01ef9dc1-d801-17de-b1fb-0d24b6384bfb
+        connectionConfig: 01efb3b5-3d42-191e-9277-567ab6593b65
         env:
-          - from: HostName
-            to: CHOREO_DATABASE_CONNECTION_HOSTNAME
-          - from: Port
-            to: CHOREO_DATABASE_CONNECTION_PORT
-          - from: Username
-            to: CHOREO_DATABASE_CONNECTION_USERNAME
-          - from: Password
-            to: CHOREO_DATABASE_CONNECTION_PASSWORD
-          - from: DatabaseName
-            to: CHOREO_DATABASE_CONNECTION_DATABASENAME
+        - from: HostName
+          to: CHOREO_DATABASE_CONNECTION_HOSTNAME
+        - from: Port
+          to: CHOREO_DATABASE_CONNECTION_PORT
+        - from: Username
+          to: CHOREO_DATABASE_CONNECTION_USERNAME
+        - from: Password
+          to: CHOREO_DATABASE_CONNECTION_PASSWORD
+        - from: DatabaseName
+          to: CHOREO_DATABASE_CONNECTION_DATABASENAME
