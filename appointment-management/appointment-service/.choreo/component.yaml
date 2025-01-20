@@ -13,7 +13,7 @@ endpoints:
 dependencies:
     serviceReferences:
     - name: database:devHrDb
-      connectionConfig: 01efd725-c58e-1b36-848c-8ac611d3605c
+      connectionConfig: 01efd736-2de5-190e-bbfd-83d99366bdce
       env:
       - from: HostName
         to: CHOREO_DATABASE_CONNECTION_HOSTNAME
